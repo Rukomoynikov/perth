@@ -1,0 +1,379 @@
+*, *:after, *:after
+	box-sizing border-box
+	
+html,body
+	font-family "OpenSansRegular"
+	overflow-x hidden
+	
+section.meet
+	background-image url("../images/header-bg.jpg")
+	height 650px
+	width 100%
+	overflow-y hidden
+	
+	> .wrap 
+		max-width 960px
+		margin 0px auto
+		padding 0px 10px
+		position relative
+	
+		> .logo
+			width 100px
+			height 100px
+			background url("../images/p-logo.png") white
+			box-shadow 15px 15px 0px rgba(13, 169, 229, 0.7)
+			background-repeat no-repeat
+			background-position 50% 50%
+
+		> .logo:after
+			content " "
+			display block
+			position absolute
+			top 100px
+			background #0da9e5
+			width 100px
+			height 4px
+			
+		> .open-menu
+			background url("../images/sandwich-button.svg")
+			width 30px
+			height 22px
+			position: absolute;
+			right: 10px;
+			top: 39px;
+			
+		> .slogan
+			position absolute
+			top: 159px;
+			text-align: right;
+			right: 9px;
+			
+			> p 
+				color white
+				font-size: 35px;
+				line-height: 25px;
+				font-family "OpenSansLightRegular"
+				margin 47px 0px 75px 0px
+				letter-spacing: -1px;
+				word-spacing: 3px;
+				
+				> span 
+					font-family "OpenSansBoldItalic"
+					
+			> a.button
+				color white
+				border: 2px solid white;
+				text-transform uppercase
+				font-size 15px
+				padding 16px 27px
+				text-decoration none
+				
+				> img
+					margin-left 10px
+					vertical-align middle
+		
+		> .illustration
+			position absolute
+			left 80px
+			top: 383px;
+			height: 267px;
+			transition all 1s
+			
+		> .illustration:hover
+			top: 400px;
+			height: 284px;
+
+section.description
+	height: 650px
+	background-color: #f4f4f4
+	width 100%
+	padding-top 95px
+		
+	> .wrap
+		width 960px
+		margin 0px auto
+		padding 0px 10px
+		position relative
+			
+		> h4
+			font-size 40px
+			line-height 25px
+			color: #545454;
+			font-family "OpenSansLightRegular"
+			margin-bottom 42px
+			
+		> p 
+			color: #7e7e7e;
+			font-size: 16px;
+			width 548px
+			margin-bottom 33px
+			
+		> blockquote
+			border-left 6px solid #4eacdd;
+			padding-left 20px
+			color: #7e7e7e;
+			font-size: 16px;
+			margin-left 0px
+			width 548px
+			margin-bottom 90px
+			
+		> a.button
+			color #14af8f
+			border: 2px solid #14af8f;
+			text-transform uppercase
+			font-size 15px
+			padding 16px 34px
+			text-decoration none
+			
+			> img
+				margin-left 10px
+				vertical-align middle
+			
+		> .illustration
+			position absolute
+			top: 4px;
+			right: -220px;
+			overflow: hidden;
+			height: 498px;			
+
+section.dribble
+	height: 650px
+	background-color white
+	width 100%
+	padding-top 55px
+	overflow-y hidden
+		
+	> .wrap
+		width 960px
+		height 100%
+		margin 0px auto
+		padding 0px 10px
+		position relative
+		padding-left 555px
+		
+		> h4
+			line-height 25px
+			color: #545454;
+			font-family "OpenSansLightRegular"
+			margin-bottom 42px
+			width 380px
+			font-size 40px
+			
+		> p
+			width 388px
+			margin: 34px auto;
+
+		> p
+			margin-bottom 76px
+			
+		> a.button
+			color #ea4c89
+			border: 2px solid #ea4c89;
+			text-transform uppercase
+			font-size 15px
+			padding 16px 34px
+			text-decoration none
+			
+			> img
+				margin-left 10px
+				vertical-align middle
+		
+		> .illustration
+			position absolute
+			left 0px 
+			top 0px			
+			bottom 0px
+			
+			> img
+				position absolute
+				bottom 0px
+				
+			> img:nth-child(1)
+				z-index 20
+				bottom: -10px;
+				left: -229px;
+				
+			> img:nth-child(2)
+				z-index 10
+				bottom: 31px;
+				left: -44px;
+
+			> img:nth-child(3)
+				z-index 20
+				bottom: 10px;
+				left: 304px;
+				
+			> img:nth-child(4)
+				z-index 30
+				bottom: 0px;
+				left: 440px;
+				
+			> img:nth-child(5)
+				z-index 20
+				bottom: 40px;
+				left: 491px;
+				
+section.buymebeer
+	background url("../images/bg-green.png")
+	height 326px
+	width 100%
+	
+	> .wrap
+		width 960px
+		height 100%
+		margin 0px auto
+		padding 100px 10px 0px 10px
+		position relative
+		text-align center
+		
+		> h4
+			line-height 25px
+			color: white
+			font-family "OpenSansLightRegular"
+			font-size 40px
+			text-align center
+			margin-bottom 0px 0px 64px 0px
+			
+		> a.button
+			color white
+			border: 2px solid white
+			text-transform uppercase
+			font-size 15px
+			padding 16px 42px
+			text-decoration none
+			
+			> img
+				margin-left 10px
+				vertical-align middle
+		
+	
+section.social
+	background-color: #f4f4f4;
+	height 650px
+	width 100%
+	display table
+	
+	> .wrap
+		width 960px
+		margin 0px auto
+		padding 0px 10px 0px 10px
+		position relative
+		text-align center
+		display table-cell
+		vertical-align middle
+				
+		> .links
+			margin-bottom 75px
+		
+		> .links > a
+			width 56px
+			height 56px
+			display inline-block
+			text-align center
+			border-radius 50% 50%
+			border: 3px solid #545454;
+			padding-top 12px
+			margin-right 35px
+			
+			> img
+				vertical-align middle
+
+		> .links > a:last-child
+			margin-right 0px
+			
+		form 
+			color: #545454;
+			
+			.formgroup
+				display: inline-block;
+				position: relative;
+				
+				> label
+					margin-right 10px
+					font-family "OpenSansBoldItalic"
+					font-size: 16px;
+					
+				> input 
+					border-radius 5px
+					border none
+					outline none
+					padding 9px
+					font-size: 14px;
+					color: #545454;
+					width 220px
+					
+				> input + img
+					position absolute
+					right 10px
+					top 50%
+					margin-top -7px
+
+				
+section.footer
+	text-align center
+	font-size 12px
+	height 100px
+	line-height 100px
+	
+	> p span
+		color: #6dc5ea;
+		font-size 12px
+	
+section.menu
+	display none
+	background-color: #f3787a;
+	opacity 0.9
+	width 100%
+	height 100%
+	position fixed
+	left 0
+	top 0
+	
+	> .wrap
+		max-width 960px
+		margin 0px auto
+		padding 0px 10px 0px 10px
+		position relative
+		text-align center
+		display block
+		
+		> .close-menu
+			background url("../images/close-button.png")
+			width 21px
+			height 22px
+			position: absolute;
+			right: 16px;
+			top: 28px;
+
+		> .menu
+			display table-cell
+			vertical-align middle
+			
+			> a
+				color white
+				font-size: 18px;
+				font-family "OpenSansBoldItalic"
+				
+				> img 
+					padding 10px
+					background white
+					border-radius 50%
+			
+@media screen and (max-width: 768px)
+
+	section.meet > .wrap
+
+		> .logo 
+			margin 0px auto
+
+		> .open-menu
+			right 40px
+
+		> .slogan
+			text-align center
+
+			> p
+				line-height 40px
+				margin 10px 0px 75px 0px
+				
+	section.description
