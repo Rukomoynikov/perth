@@ -129,7 +129,7 @@ section.description > .wrap > a.button {
   padding: 16px 34px;
   text-decoration: none;
 }
-section.description > .wrap > a.button > img {
+section.description > .wrap > a.button > svg {
   margin-left: 10px;
   vertical-align: middle;
 }
@@ -191,31 +191,31 @@ section.dribble > .wrap > .illustration {
   top: 0px;
   bottom: -57px;
 }
-section.dribble > .wrap > .illustration > img {
+section.dribble > .wrap > .illustration > svg {
   position: absolute;
   bottom: 0px;
 }
-section.dribble > .wrap > .illustration > img:nth-child(1) {
+section.dribble > .wrap > .illustration > svg:nth-child(1) {
   z-index: 20;
   bottom: -10px;
   left: -229px;
 }
-section.dribble > .wrap > .illustration > img:nth-child(2) {
+section.dribble > .wrap > .illustration > svg:nth-child(2) {
   z-index: 10;
   bottom: 31px;
   left: -44px;
 }
-section.dribble > .wrap > .illustration > img:nth-child(3) {
+section.dribble > .wrap > .illustration > svg:nth-child(3) {
   z-index: 20;
   bottom: 10px;
   left: 304px;
 }
-section.dribble > .wrap > .illustration > img:nth-child(4) {
+section.dribble > .wrap > .illustration > svg:nth-child(4) {
   z-index: 30;
   bottom: 0px;
   left: 440px;
 }
-section.dribble > .wrap > .illustration > img:nth-child(5) {
+section.dribble > .wrap > .illustration > svg:nth-child(5) {
   z-index: 20;
   bottom: 40px;
   left: 491px;
@@ -287,6 +287,14 @@ section.social > .wrap > .links > a > svg {
 section.social > .wrap > .links > a > svg > path {
   fill: #545454;
 }
+section.social > .wrap > .links > a:hover {
+  transition: 0.33s;
+  box-shadow: 1px 0px 5px #545454;
+  background: #545454;
+}
+section.social > .wrap > .links > a:hover > svg > path {
+  fill: #fff;
+}
 section.social > .wrap > .links > a:last-child {
   margin-right: 0px;
 }
@@ -343,31 +351,46 @@ section.menu > .wrap {
   padding: 0px 10px 0px 10px;
   position: relative;
   text-align: center;
-  display: block;
+  display: table;
+  height: 100%;
 }
 section.menu > .wrap > .close-menu {
   background: url("../images/close-button.png");
   width: 21px;
   height: 22px;
   position: absolute;
-  right: 16px;
-  top: 28px;
+  right: 15px;
+  top: 39px;
 }
 section.menu > .wrap > .menu {
   display: table-cell;
   vertical-align: middle;
+  text-align: left;
 }
 section.menu > .wrap > .menu > a {
   color: #fff;
   font-size: 18px;
   font-family: "OpenSansBoldItalic";
+  display: block;
+  margin-bottom: 20px;
 }
-section.menu > .wrap > .menu > a > img {
+section.menu > .wrap > .menu > a > i {
   padding: 10px;
   background: #fff;
   border-radius: 50%;
+  color: #000;
+  margin-right: 10px;
 }
 @media screen and (max-width: 768px) {
+  section.meet > .wrap {
+    min-height: 750px;
+  }
+  section.meet > .wrap > .illustration {
+    bottom: -20px;
+    top: initial;
+    left: 50%;
+    margin-left: -114px;
+  }
   section.meet > .wrap > .logo {
     margin: 0px auto;
   }
@@ -410,13 +433,23 @@ section.menu > .wrap > .menu > a > img {
     text-align: center;
     vertical-align: middle;
   }
-  section.dribble > .wrap > a.button svg {
-    vertical-align: middle;
-  }
-  section.dribble > .wrap > a.button svg path {
-    fill: #f4f4f4;
-  }
   section.social {
     min-height: 340px;
+  }
+}
+@-webkit-keyframes show-from-app {
+  from {
+    top: 100%;
+  }
+  to {
+    top: 0%;
+  }
+}
+@keyframes show-from-app {
+  from {
+    top: 100%;
+  }
+  to {
+    top: 0%;
   }
 }

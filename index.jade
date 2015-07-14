@@ -2,6 +2,7 @@ doctype html
 html
 	head
 		link(href='assets/fonts/osans/osans.css', rel='stylesheet')
+		link(href='assets/fonts/fawesome/css/font-awesome.min.css', rel='stylesheet')
 		link(href='assets/css/normalize.css', rel='stylesheet')
 		link(href='assets/css/main.css', rel='stylesheet')
 		link(href='assets/css/animate.css', rel='stylesheet')
@@ -19,17 +20,17 @@ html
 						| too!
 					a.button(href='#') Download
 						include ./assets/images/cloud-download.svg
-				.illustration.wow.shake()
-					img(src='assets/images/iphone5-head.svg')
+				.illustration.wow.slideInUp
+					include ./assets/images/iphone5-head.svg
 		section.description
 			.wrap
 				h4 A Longwinded Header
 				p She'll be right paddock how lets throw a ciggies. She'll be right ute to built like a doovalacky. We're going rack off bloody she'll be right pash. You little ripper tucker also get a dog up ya greenie.
 				blockquote You little ripper boozer no worries she'll be right holy dooley!. Come a freo also as cross as a your shout. Lets throw a khe sanh flamin dead dingo's donger. Lets get some fisho with grab us a trackie dacks.
 				a.button(href='') say hello
-					img(src='assets/images/pochta-icon.png')
-				.illustration
-					img(src='assets/images/ipad-right.svg')
+					include ./assets/images/envelope-o.svg
+				.illustration.wow.slideInRight
+					include ./assets/images/ipad-right.svg
 		section.dribble
 			.wrap
 				h4 Get a Dog Up Ya'
@@ -37,12 +38,12 @@ html
 				p We're going rack off bloody she'll be right pash. You  little ripper tucker also get a dog up ya greenie.
 				a.button(href='') view on dribble
 					include ./assets/images/dribbble.svg
-				.illustration.wow.bounceInUp
-					img(src='assets/images/macbook.svg')
-					img(src='assets/images/imac.svg')
-					img(src='assets/images/ipad.svg')
-					img(src='assets/images/iphone5.svg')
-					img(src='assets/images/ipadmini.svg')
+				.illustration.wow.slideInUp
+					include ./assets/images/macbook.svg
+					include ./assets/images/imac.svg
+					include ./assets/images/ipad.svg
+					include ./assets/images/iphone5.svg
+					include ./assets/images/ipadmini.svg
 		section.buymebeer
 			.wrap
 				h4 Like What You See?
@@ -73,10 +74,16 @@ html
 				.close-menu
 				.menu
 					a(href="#")
-						img(src='assets/images/menu-home.png')
-						| Домой
+						i.fa.fa-home
+						| Home
 					a(href="#")
-						img(src='assets/images/menu-home.png')
-						| Домой
+						i.fa.fa-heart-o
+						| About
+					a(href="#")
+						i.fa.fa-desktop
+						| Portfolio
+					a(href="#")
+						i.fa.fa-envelope-o
+						| Drop me a line
 		script(src='assets/js/wow.min.js', type='text/javascript')
 		script(src='assets/js/app.js', type='text/javascript')

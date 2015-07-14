@@ -126,7 +126,7 @@ section.description
 			padding 16px 34px
 			text-decoration none
 			
-			> img
+			> svg
 				margin-left 10px
 				vertical-align middle
 			
@@ -188,31 +188,31 @@ section.dribble
 			top 0px			
 			bottom -57px
 			
-			> img
+			> svg
 				position absolute
 				bottom 0px
 				
-			> img:nth-child(1)
+			> svg:nth-child(1)
 				z-index 20
 				bottom: -10px;
 				left: -229px;
 				
-			> img:nth-child(2)
+			> svg:nth-child(2)
 				z-index 10
 				bottom: 31px;
 				left: -44px;
 
-			> img:nth-child(3)
+			> svg:nth-child(3)
 				z-index 20
 				bottom: 10px;
 				left: 304px;
 				
-			> img:nth-child(4)
+			> svg:nth-child(4)
 				z-index 30
 				bottom: 0px;
 				left: 440px;
 				
-			> img:nth-child(5)
+			> svg:nth-child(5)
 				z-index 20
 				bottom: 40px;
 				left: 491px;
@@ -284,6 +284,14 @@ section.social
 				
 				> path
 					fill #545454;
+					
+		> .links > a:hover
+			transition 0.33s
+			box-shadow 1px 0px 5px #545454
+			background #545454
+			
+			> svg > path
+				fill white
 
 		> .links > a:last-child
 			margin-right 0px
@@ -342,33 +350,46 @@ section.menu
 		padding 0px 10px 0px 10px
 		position relative
 		text-align center
-		display block
+		display table
+		height 100%
 		
 		> .close-menu
 			background url("../images/close-button.png")
 			width 21px
 			height 22px
 			position: absolute;
-			right: 16px;
-			top: 28px;
+			right: 15px;
+			top: 39px;
 
 		> .menu
 			display table-cell
 			vertical-align middle
+			text-align left
 			
 			> a
 				color white
 				font-size: 18px;
 				font-family "OpenSansBoldItalic"
+				display block
+				margin-bottom 20px
 				
-				> img 
+				> i
 					padding 10px
 					background white
 					border-radius 50%
+					color black
+					margin-right 10px
 			
 @media screen and (max-width: 768px)
 
 	section.meet > .wrap
+		min-height 750px
+		
+		> .illustration
+			bottom -20px
+			top initial
+			left 50%
+			margin-left -114px
 
 		> .logo 
 			margin 0px auto
@@ -414,11 +435,13 @@ section.menu
 				text-align center
 				vertical-align middle
 				
-				svg
-					vertical-align middle	
-					
-					path
-						fill #f4f4f4
-				
 	section.social
 		min-height 340px
+		
+@keyframes show-from-app
+	from
+		top 100%
+	to
+		top 0%
+	to 
+		
