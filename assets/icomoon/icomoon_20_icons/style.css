@@ -1,0 +1,114 @@
+.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
+
+/* =======================================================================================
+Example showing how to change the color/size of the icons:
+.icon-name {
+	font-size: 32px; // works because "width" & "height" were set using em units
+	color: red; // works for single-colored icons, because "fill" was set to "currentColor"
+}
+======================================================================================== */
+.fill-color1 {
+	fill: #474e5d;
+}
+.fill-color2 {
+	fill: #f79231;
+}
+.fill-color3 {
+	fill: #39dcc9;
+}
+.fill-color4 {
+	fill: #70c6eb;
+}
+.fill-color5 {
+	fill: #a5a4a4;
+}
+.fill-color6 {
+	fill: #a5a5a5;
+}
+.fill-color7 {
+	fill: #c0c2c6;
+}
+.fill-color8 {
+	fill: #d8dbe1;
+}
+.fill-color9 {
+	fill: #e8ebf0;
+}
+.fill-color10 {
+	fill: #f3787a;
+}
+.fill-color11 {
+	fill: #f6f6f6;
+}
+.fill-color12 {
+	fill: #fee9a3;
+}
+
+.icon-close-button {
+	width: 0.9541015625em;
+}
+
+.icon-cloud-download {
+	width: 1.0712890625em;
+}
+
+.icon-coffee {
+	width: 1.0712890625em;
+}
+
+.icon-facebook-icon {
+	width: 0.5263671875em;
+}
+
+.icon-header-bg {
+	width: 1.935546875em;
+}
+
+.icon-imac {
+	width: 1.208984375em;
+}
+
+.icon-ipad-right {
+	width: 0.70703125em;
+}
+
+.icon-ipad {
+	width: 0.703125em;
+}
+
+.icon-ipadmini {
+	width: 0.7041015625em;
+}
+
+.icon-iphone5-head {
+	width: 0.47265625em;
+}
+
+.icon-iphone5 {
+	width: 0.48046875em;
+}
+
+.icon-macbook {
+	width: 1.7509765625em;
+}
+
+.icon-p-logo {
+	width: 0.595703125em;
+}
+
+.icon-pochta-icon {
+	width: 1.23046875em;
+}
+
+.icon-sandwich-button {
+	width: 1.36328125em;
+}
+
+.icon-twitter-icon {
+	width: 1.0439453125em;
+}

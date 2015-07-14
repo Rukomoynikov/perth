@@ -1,3 +1,5 @@
+new WOW().init();
+
 var menu_button = document.querySelector(".open-menu");
 menu_button.addEventListener('click', openMenu);
 

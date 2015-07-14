@@ -1,4 +1,4 @@
-*, *:after, *:after
+*, *:after, *:before
 	box-sizing border-box
 	
 html,body
@@ -7,7 +7,7 @@ html,body
 	
 section.meet
 	background-image url("../images/header-bg.jpg")
-	height 650px
+	min-height 650px
 	width 100%
 	overflow-y hidden
 	
@@ -68,7 +68,7 @@ section.meet
 				padding 16px 27px
 				text-decoration none
 				
-				> img
+				> svg
 					margin-left 10px
 					vertical-align middle
 		
@@ -84,13 +84,13 @@ section.meet
 			height: 284px;
 
 section.description
-	height: 650px
+	min-height: 650px
 	background-color: #f4f4f4
 	width 100%
 	padding-top 95px
 		
 	> .wrap
-		width 960px
+		max-width 960px
 		margin 0px auto
 		padding 0px 10px
 		position relative
@@ -105,7 +105,7 @@ section.description
 		> p 
 			color: #7e7e7e;
 			font-size: 16px;
-			width 548px
+			max-width 548px
 			margin-bottom 33px
 			
 		> blockquote
@@ -114,8 +114,9 @@ section.description
 			color: #7e7e7e;
 			font-size: 16px;
 			margin-left 0px
-			width 548px
+			max-width 548px
 			margin-bottom 90px
+			font-style italic
 			
 		> a.button
 			color #14af8f
@@ -137,15 +138,15 @@ section.description
 			height: 498px;			
 
 section.dribble
-	height: 650px
+	min-height: 650px
 	background-color white
 	width 100%
 	padding-top 55px
 	overflow-y hidden
 		
 	> .wrap
-		width 960px
-		height 100%
+		max-width 960px
+		min-height 650px
 		margin 0px auto
 		padding 0px 10px
 		position relative
@@ -174,15 +175,18 @@ section.dribble
 			padding 16px 34px
 			text-decoration none
 			
-			> img
+			> svg
 				margin-left 10px
 				vertical-align middle
+				
+				> path
+					fill #ea4c89
 		
 		> .illustration
 			position absolute
 			left 0px 
 			top 0px			
-			bottom 0px
+			bottom -57px
 			
 			> img
 				position absolute
@@ -215,11 +219,11 @@ section.dribble
 				
 section.buymebeer
 	background url("../images/bg-green.png")
-	height 326px
+	min-height 326px
 	width 100%
 	
 	> .wrap
-		width 960px
+		max-width 960px
 		height 100%
 		margin 0px auto
 		padding 100px 10px 0px 10px
@@ -242,19 +246,19 @@ section.buymebeer
 			padding 16px 42px
 			text-decoration none
 			
-			> img
+			> svg
 				margin-left 10px
 				vertical-align middle
 		
 	
 section.social
 	background-color: #f4f4f4;
-	height 650px
+	min-height 650px
 	width 100%
 	display table
 	
 	> .wrap
-		width 960px
+		max-width 960px
 		margin 0px auto
 		padding 0px 10px 0px 10px
 		position relative
@@ -275,8 +279,11 @@ section.social
 			padding-top 12px
 			margin-right 35px
 			
-			> img
+			> svg
 				vertical-align middle
+				
+				> path
+					fill #545454;
 
 		> .links > a:last-child
 			margin-right 0px
@@ -302,17 +309,17 @@ section.social
 					color: #545454;
 					width 220px
 					
-				> input + img
+				> input + svg
 					position absolute
 					right 10px
 					top 50%
-					margin-top -7px
+					margin-top -15px
 
 				
 section.footer
 	text-align center
 	font-size 12px
-	height 100px
+	min-height 100px
 	line-height 100px
 	
 	> p span
@@ -376,4 +383,42 @@ section.menu
 				line-height 40px
 				margin 10px 0px 75px 0px
 				
-	section.description
+	section.description 
+		padding-top 10px
+
+		> .wrap
+		
+			> .illustration
+				display none
+				
+			> h4
+				line-height 40px
+				font-size: 38px;
+				
+			> .button
+				display: block;
+				text-align: center;
+				
+	section.dribble 
+		padding 10px
+
+		> .wrap
+			padding 0px 0px 475px 0px
+			min-height inherit
+				
+			> p
+				margin: 34px 0px;
+				
+			> a.button
+				display block
+				text-align center
+				vertical-align middle
+				
+				svg
+					vertical-align middle	
+					
+					path
+						fill #f4f4f4
+				
+	section.social
+		min-height 340px
